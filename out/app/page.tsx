@@ -1,26 +1,15 @@
-import Image from "next/image";
 import NavBar from './components/NavBar'
+import Link from 'next/link';
 
 export default function Home() {
   return (
-   <div>
+   <div className="flex flex-col min-h-screen">
       <NavBar/>
-      <main className="">
-        <div className="flex flex-col grid grid-cols-4 gap-4 items-center p-10 justify-center text-center">
-          <img src="https://i.pinimg.com/736x/17/57/4f/17574f50858d7a0417515a57c8c3d71d.jpg" alt="fotoHome" className="rounded-lg shadow-lg mb-6"/>
-          <img src="https://i.pinimg.com/736x/17/57/4f/17574f50858d7a0417515a57c8c3d71d.jpg" alt="fotoHome" className="rounded-lg shadow-lg mb-6"/>
-          <img src="https://i.pinimg.com/736x/17/57/4f/17574f50858d7a0417515a57c8c3d71d.jpg" alt="fotoHome" className="rounded-lg shadow-lg mb-6"/>
-          <img src="https://i.pinimg.com/736x/17/57/4f/17574f50858d7a0417515a57c8c3d71d.jpg" alt="fotoHome" className="rounded-lg shadow-lg mb-6"/>
-          <img src="https://i.pinimg.com/736x/17/57/4f/17574f50858d7a0417515a57c8c3d71d.jpg" alt="fotoHome" className="rounded-lg shadow-lg mb-6"/>
-          <img src="https://i.pinimg.com/736x/17/57/4f/17574f50858d7a0417515a57c8c3d71d.jpg" alt="fotoHome" className="rounded-lg shadow-lg mb-6"/>
-          <img src="https://i.pinimg.com/736x/17/57/4f/17574f50858d7a0417515a57c8c3d71d.jpg" alt="fotoHome" className="rounded-lg shadow-lg mb-6"/>
-          <img src="https://i.pinimg.com/736x/17/57/4f/17574f50858d7a0417515a57c8c3d71d.jpg" alt="fotoHome" className="rounded-lg shadow-lg mb-6"/>
-          <img src="https://i.pinimg.com/736x/17/57/4f/17574f50858d7a0417515a57c8c3d71d.jpg" alt="fotoHome" className="rounded-lg shadow-lg mb-6"/>
-          <img src="https://i.pinimg.com/736x/17/57/4f/17574f50858d7a0417515a57c8c3d71d.jpg" alt="fotoHome" className="rounded-lg shadow-lg mb-6"/>
-          {/* picsum.photos */}
-        </div>
-        <div className="flex flex-col items-center font-semibold text-white">
-          <h1>SIMSIMSISMISMSIMSIMSISMMISMISISMSIMSIMS</h1>
+      <main className="flex-1 flex flex-col items-center justify-center p-8 text-center">
+        <div className="flex flex-col items-center mt-10">
+          <Link href="/galeria" className="px-8 py-4 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 transition-colors text-xl">
+            Ir para a Galeria
+          </Link>
         </div>
       </main>
     </div>
