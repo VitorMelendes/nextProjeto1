@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
     appIsrStatus: false,
     buildActivity: false,
   },
+
+  // 🔥 ADICIONE ISSO
+  allowedDevOrigins: ["192.168.56.1"],
 };
 
 export default nextConfig;
